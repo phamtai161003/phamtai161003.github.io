@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.3.0-web/css/all.min.css">
+
+    <title>TTT store - đăng nhập</title>
+
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/dangnhap.css">
+    <script src="./assets/js/dungChung.js"></script>
+    <script src="./assets/js/dangnhap.js"></script>
+
+    <body>
+        <script>
+            addHeader();
+        </script>
+        <div class="content-wrapper">
+            <main class="main-content">
+                <div class="forms-container">
+                    <div id="login-form" class="login-container">
+                        <form onsubmit="return validateLoginForm()" action="/login" method="POST">
+                            <h2>Đăng nhập</h2>
+                            <div class="input-container">
+                                <input type="text" id="login-username" name="username" placeholder="Tên đăng nhập" required>
+                                <input type="password" id="login-password" name="password" placeholder="Mật khẩu" required>
+                                <input type="submit" value="Đăng nhập">
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div id="register-form" class="register-container hidden">
+                        <form onsubmit="return validateRegisterForm()" action="/register" method="POST">
+                            <h2>Đăng ký</h2>
+                            <input type="text" id="register-username" name="username" placeholder="Tên đăng nhập" required>
+                            <input type="email" id="register-email" name="email" placeholder="Email" required>
+                            <input type="password" id="register-password" name="password" placeholder="Mật khẩu" required>
+                            <input type="password" id="register-confirm-password" name="confirm_password" placeholder="Xác nhận mật khẩu" required>
+                            <input type="submit" value="Đăng ký">
+                        </form>
+                    </div>
+                </div>
+                <button onclick="toggleForms()">Chuyển đổi giữa đăng nhập và đăng ký</button>
+            </main>
+        </div>
+        <SCript>
+            addFooter();
+        </SCript>
+
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/tracuudonhang.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.3.0-web/css/all.min.css">
+    <script src="./assets/js/tracuu.js" defer></script>
+    <script src="./assets/js/dungChung.js"></script>
+</head>
+
+<body>
+    <script>
+        addHeader();
+    </script>
+    <main>
+        <div class="conten">
+            <div class="conten_left"><img src="./assets/img/shipper.jpg" alt="#"></div>
+            <div class="conten_right">
+                <div class="text"><b>Kiểm tra thông tin đơn hàng & tình trang vận chuyển</b></div>
+                <div><input type="text" id="order-number" placeholder="Số điện thoại (bắt buộc)"></div>
+                <div><input type="text" id="order-code" placeholder="Mã đơn hàng (bắt buộc)"></div>
+                <div class="kiemtra"><button onclick="checkOrder">Kiểm tra</button> </div>
+                <div class="or-container">
+                    <span>Hoặc</span>
+                </div>
+                <a href="http://127.0.0.1:5500/TStore/dangnhap.html">
+                    <div class="txtLogin"><button class="btn_login">Đăng nhập để tra cứu thuận tiện hơn</button></div>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <SCript>
+        addFooter();
+    </SCript>
+
+
+</body>
+
+</html>
